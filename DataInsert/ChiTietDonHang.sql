@@ -1,0 +1,7 @@
+INSERT INTO ChiTietDonHang (MaDonHang, MaSanPham, Gia, SoLuong) VALUES
+('DH001', 'SP001', 15000000, 1),
+('DH001', 'SP003', 1200000, 2),
+('DH002', 'SP002', 25000000, 1),
+('DH003', 'SP004', 12000000, 1),
+('DH004', 'SP005', 22000000, 1),
+('DH005', 'SP010', 5000000, 1);
