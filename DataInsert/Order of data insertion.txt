@@ -1,0 +1,10 @@
+Thứ tự chèn dữ liệu:
+- LoaiKhachHang: Đây là bảng cha của KhachHang, nên cần chèn trước.
+- KhachHang: Dữ liệu trong bảng này phụ thuộc vào LoaiKhachHang.
+- SanPham: Đây là bảng độc lập, không có phụ thuộc khóa ngoại.
+- KhuyenMai: Đây là bảng độc lập, không có phụ thuộc khóa ngoại.
+- DonHang: Dữ liệu trong bảng này phụ thuộc vào KhachHang.
+- ChiTietDonHang: Dữ liệu trong bảng này phụ thuộc vào DonHang và SanPham.
+- ChiTietKhuyenMai: Dữ liệu trong bảng này phụ thuộc vào KhuyenMai và SanPham.
+- PhieuQuaTang: Dữ liệu trong bảng này phụ thuộc vào KhachHang.
+- DonDatKho: Dữ liệu trong bảng này phụ thuộc vào SanPham.
