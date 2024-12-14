@@ -1,0 +1,26 @@
+THỨ TỰ TẠO CSDL
+
+1. Tạo các bảng từ file "CreateTable.sql".
+
+2. Tiến hành nạp dữ liệu trong folder 'Database' vào các bảng theo thứ tự sau:
+THUOC
+DANHMUCDIEUTRI
+LOAIDIEUTRI
+PHONGKHAM
+NHANVIEN
+CALAM
+HOSOBENHNHAN
+LICHLAMVIEC
+LICHHEN
+KEHOACHDIEUTRI
+BUOIDIEUTRI
+HOADON
+CHITIETDIEUTRI
+DONTHUOC
+CHITIETDONTHUOC
+CHITIETTRANGDIEUTRI
+
+3. Chạy các Store Procedure trong folder 'SP'
+
+4. Tiến hành thực nghiệm trong bảng 'index.sql' 
+
