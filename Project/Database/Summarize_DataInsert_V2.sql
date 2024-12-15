@@ -8,7 +8,7 @@ VALUES
     ('DONG', 0, N'Đồng', 100000),
     ('THANTHIET', NULL, N'Thân thiết', 0);
 
-	-- Nạp dữ liệu vào bảng KhachHang
+-- Nạp dữ liệu vào bảng KhachHang
 INSERT INTO KhachHang (SDT, TenKhachHang, NgayDangKy, NgaySinhNhat, MaLoaiKhachHang)
 VALUES 
     ('0901234567', N'Nguyễn Văn A', '2022-05-10', '1990-03-15', 'KIMCUONG'),
@@ -30,20 +30,6 @@ VALUES
     ('0917890123', N'Nguyễn Tấn Q', '2020-10-27', '1992-07-18', 'DONG'),
     ('0918901234', N'Lê Hoàng R', '2022-11-13', '1994-05-22', 'THANTHIET'),
     ('0919012345', N'Hoàng Đức S', '2023-09-30', '1996-12-05', 'KIMCUONG');
-
--- Nạp dữ liệu vào bảng PhieuQuaTang
-INSERT INTO PhieuQuaTang (MaPhieu, NgayBatDau, NgayKetThuc, GiaTriQuaTang, SDTKhachHang)
-VALUES 
-    ('PQ0001', '2023-01-01', '2023-12-31', 1200000, '0901234567'),  -- Kim cương
-    ('PQ0002', '2023-02-01', '2023-12-31', 700000, '0902345678'),   -- Bạch kim
-    ('PQ0003', '2023-03-01', '2023-12-31', 500000, '0903456789'),   -- Vàng
-    ('PQ0004', '2023-04-01', '2023-12-31', 200000, '0904567890'),   -- Bạc
-    ('PQ0005', '2023-05-01', '2023-12-31', 100000, '0905678901'),   -- Đồng
-    ('PQ0006', '2023-06-01', '2023-12-31', 1200000, '0907890123'),   -- Kim cương
-    ('PQ0007', '2023-07-01', '2023-12-31', 700000, '0908901234'),   -- Bạch kim
-    ('PQ0008', '2023-08-01', '2023-12-31', 500000, '0909012345'),   -- Vàng
-    ('PQ0009', '2023-09-01', '2023-12-31', 200000, '0910123456'),   -- Bạc
-    ('PQ0010', '2023-10-01', '2023-12-31', 100000, '0911234567');   -- Đồng
 
 -- Nạp dữ liệu vào bảng SanPham
 INSERT INTO SanPham (MaSP, TenSP, GiaSP, MoTa, PhanLoai, NhaSanXuat, SoLuongConLai, SoLuongToiDa)
@@ -99,6 +85,20 @@ VALUES
     ('SP0049', N'Bàn chải điện', 800000, N'Bàn chải điện giúp làm sạch răng miệng hiệu quả.', N'Mỹ phẩm', N'Oral-B', 150, 300),
     ('SP0050', N'Giày thể thao nữ', 650000, N'Giày thể thao nữ, thiết kế thời trang, phù hợp với mọi hoạt động.', N'Quần áo', N'Adidas', 180, 360);
 
+-- Nạp dữ liệu vào bảng KhuyenMai
+INSERT INTO KhuyenMai (MaKhuyenMai, TenKhuyenMai, LoaiKhuyenMai, ThoiGianBatDau, ThoiGianKetThuc)
+VALUES 
+    ('KM0001', N'Flash Sale Áo Thun Nam', N'Flash-sale', '2023-01-01', '2023-01-07'),
+    ('KM0002', N'Combo Sale Giày và Áo', N'Combo-sale', '2023-02-01', '2023-02-15'),
+    ('KM0003', N'Member Sale Cho Khách Kim Cương', N'Member-sale', '2023-03-01', '2023-03-31'),
+    ('KM0004', N'Flash Sale Điện Thoại', N'Flash-sale', '2023-04-01', '2023-04-07'),
+    ('KM0005', N'Combo Sale Tai Nghe và Loa', N'Combo-sale', '2023-05-01', '2023-05-10'),
+    ('KM0006', N'Member Sale Cho Khách Bạch Kim', N'Member-sale', '2023-06-01', '2023-06-30'),
+    ('KM0007', N'Flash Sale Máy Tính Xách Tay', N'Flash-sale', '2023-07-01', '2023-07-15'),
+    ('KM0008', N'Combo Sale Tivi và Loa', N'Combo-sale', '2023-08-01', '2023-08-15'),
+    ('KM0009', N'Member Sale Cho Khách Vàng', N'Member-sale', '2023-09-01', '2023-09-30'),
+    ('KM0010', N'Flash Sale Tủ Lạnh', N'Flash-sale', '2023-10-01', '2023-10-07');
+
 -- Nạp dữ liệu vào bảng DonHang
 INSERT INTO DonHang (MaDonHang, MaKhachHang, GiamGiaTheoPhieu, ThoiGianMua)
 VALUES 
@@ -147,21 +147,7 @@ VALUES
     ('DH0010', 'SP0033', 500000, 2),   -- Kem dưỡng da, 2 hộp
     ('DH0010', 'SP0040', 250000, 3);   -- Bình giữ nhiệt, 3 bình
 
-	-- Nạp dữ liệu vào bảng KhuyenMai
-INSERT INTO KhuyenMai (MaKhuyenMai, TenKhuyenMai, LoaiKhuyenMai, ThoiGianBatDau, ThoiGianKetThuc)
-VALUES 
-    ('KM0001', N'Flash Sale Áo Thun Nam', N'Flash-sale', '2023-01-01', '2023-01-07'),
-    ('KM0002', N'Combo Sale Giày và Áo', N'Combo-sale', '2023-02-01', '2023-02-15'),
-    ('KM0003', N'Member Sale Cho Khách Kim Cương', N'Member-sale', '2023-03-01', '2023-03-31'),
-    ('KM0004', N'Flash Sale Điện Thoại', N'Flash-sale', '2023-04-01', '2023-04-07'),
-    ('KM0005', N'Combo Sale Tai Nghe và Loa', N'Combo-sale', '2023-05-01', '2023-05-10'),
-    ('KM0006', N'Member Sale Cho Khách Bạch Kim', N'Member-sale', '2023-06-01', '2023-06-30'),
-    ('KM0007', N'Flash Sale Máy Tính Xách Tay', N'Flash-sale', '2023-07-01', '2023-07-15'),
-    ('KM0008', N'Combo Sale Tivi và Loa', N'Combo-sale', '2023-08-01', '2023-08-15'),
-    ('KM0009', N'Member Sale Cho Khách Vàng', N'Member-sale', '2023-09-01', '2023-09-30'),
-    ('KM0010', N'Flash Sale Tủ Lạnh', N'Flash-sale', '2023-10-01', '2023-10-07');
-
-	-- Nạp dữ liệu vào bảng ChiTietKhuyenMai
+-- Nạp dữ liệu vào bảng ChiTietKhuyenMai
 INSERT INTO ChiTietKhuyenMai (MaKhuyenMai, MaSP, SanPham1, SanPham2, GiaTriGiamGia, SoLuongToiDa)
 VALUES 
     ('KM0001', 'SP0001', 'SP0001', NULL, 100000, 50),   -- Flash Sale Áo Thun Nam, giảm 100k, tối đa 50 sản phẩm
@@ -185,7 +171,21 @@ VALUES
     ('KM0010', 'SP0026', 'SP0026', NULL, 150000, 30),   -- Flash Sale Bộ đồ bơi, giảm 150k, tối đa 30 sản phẩm
     ('KM0010', 'SP0046', 'SP0046', NULL, 300000, 20);   -- Flash Sale Máy làm kem, giảm 300k, tối đa 20 sản phẩm
 
-	-- Nạp dữ liệu vào bảng DonDatKho
+-- Nạp dữ liệu vào bảng PhieuQuaTang
+INSERT INTO PhieuQuaTang (MaPhieu, NgayBatDau, NgayKetThuc, GiaTriQuaTang, SDTKhachHang)
+VALUES 
+    ('PQ0001', '2023-01-01', '2023-12-31', 1200000, '0901234567'),  -- Kim cương
+    ('PQ0002', '2023-02-01', '2023-12-31', 700000, '0902345678'),   -- Bạch kim
+    ('PQ0003', '2023-03-01', '2023-12-31', 500000, '0903456789'),   -- Vàng
+    ('PQ0004', '2023-04-01', '2023-12-31', 200000, '0904567890'),   -- Bạc
+    ('PQ0005', '2023-05-01', '2023-12-31', 100000, '0905678901'),   -- Đồng
+    ('PQ0006', '2023-06-01', '2023-12-31', 1200000, '0907890123'),   -- Kim cương
+    ('PQ0007', '2023-07-01', '2023-12-31', 700000, '0908901234'),   -- Bạch kim
+    ('PQ0008', '2023-08-01', '2023-12-31', 500000, '0909012345'),   -- Vàng
+    ('PQ0009', '2023-09-01', '2023-12-31', 200000, '0910123456'),   -- Bạc
+    ('PQ0010', '2023-10-01', '2023-12-31', 100000, '0911234567');   -- Đồng
+
+-- Nạp dữ liệu vào bảng DonDatKho
 INSERT INTO DonDatKho (MaDonDat, TrangThaiGiao, SoLuongDaNhan, SoLuongDat, GiaTriDat, NgayDat, MaSanPham)
 VALUES 
     ('DDK0001', N'Đang giao', 50, 100, 5000000, '2023-01-10', 'SP0001'),   -- Đặt hàng cho Áo thun Nam, đã nhận 50 sản phẩm

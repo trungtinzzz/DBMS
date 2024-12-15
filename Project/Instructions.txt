@@ -1,4 +1,10 @@
-Thứ tự chèn dữ liệu:
+----Thứ tự chạy
+- Chạy CreateTable_V2.sql
+- Chạy Summarize_DataInsert_V2.sql
+- Chạy folder SProcedure
+- Tranh chấp đồng thời: Chạy folder DisputeTransaction
+
+----Thứ tự chèn dữ liệu:
 - LoaiKhachHang: Đây là bảng cha của KhachHang, nên cần chèn trước.
 - KhachHang: Dữ liệu trong bảng này phụ thuộc vào LoaiKhachHang.
 - SanPham: Đây là bảng độc lập, không có phụ thuộc khóa ngoại.
